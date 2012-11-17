@@ -45,6 +45,9 @@ function handleAjaxError(e, xhr, settings, exception) {
 };
 
 var one_day=1000*60*60*24;
+function DayDiff( date1, date2) {
+    return Number( Math.floor( ( date1 - date2 ) / one_day ) );
+}
 function WeekDiff( date1, date2) {
     return Number( Math.floor( ( date1 - date2 ) / one_day / 7 ) );
 }
