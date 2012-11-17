@@ -1,0 +1,42 @@
+<div id="rpg-submenu">
+    <nav>
+        <a href='one'>One</a>
+        <a href='two'>Two</a>
+        <a href='three'>Three</a>
+    </nav>
+</div>
+
+<div id="rpg-body">
+    <div id='rpg-body-left'>
+        <h3>Side Menu - pg 1</h3>
+        <ol>
+            <li>Link 1</li>
+            <li>Link 2</li>
+        </ol>
+    </div>
+    
+    <div id='rpg-body-center'>
+        <section>
+            <h3>Section</h3>
+            <div id="rpg-body-content"></div>
+            <ol>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+            </ol>
+        </section>
+    </div>
+</div>
+<script>
+    $( "#rpg-submenu a" ).bind( "click", function(event) {
+                               href = this.href.slice( this.href.lastIndexOf( "/" ) + 1);
+                               $("#rpg-submenu a").removeClass( "selected" );
+                               $(this).addClass( "selected" );
+                               
+                               $( "#rpg-body-content" ).html( "New Content. " + href );
+                               
+                               return false;
+                               });
+    </script>

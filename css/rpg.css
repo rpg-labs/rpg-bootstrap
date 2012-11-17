@@ -1,0 +1,108 @@
+/**************************************************************************************************************/
+/* Generic rules across all apps
+/**************************************************************************************************************/
+
+body {
+font-family: calibri,cambria,arial;
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 20px;
+}
+
+body, input {
+font-size: 1em;
+}
+
+td, th, label {
+padding: 3px 6px;
+}
+
+th {
+white-space:nowrap;
+}
+
+.number, .date {
+text-align: center;
+}
+
+/**************************************************************************************************************/
+/* Global Menu
+/**************************************************************************************************************/
+
+#rpg-menu {
+margin-bottom: 5px;
+}
+
+#rpg-menu nav a {
+padding: 5px 35px;
+color: black;
+text-decoration: none;
+font-size: 13pt;
+border-top-left-radius:0.5em;
+border-top-right-radius:0.5em;
+}
+
+#rpg-menu nav a:hover, #rpg-menu nav a.selected, #rpg-submenu, #rpg-body-center {
+background-color: rgb( 10,148,214 );
+}
+
+#rpg-menu nav a.selected {
+color: white;
+}
+
+#rpg-submenu {
+padding: 20px 20px;
+border-top-right-radius:0.5em;
+}
+
+#rpg-submenu a {
+border-radius:0.2em;
+padding: 5px 15px;
+color: black;
+text-decoration: none;
+font-size: 13pt;
+margin: 1 4;
+color: white;
+background-color: rgba( 255,255,255, 0.2);
+}
+
+#rpg-submenu a:hover, #rpg-submenu a.selected {
+background: rgba( 255,255,255, 0.5);
+}
+#rpg-submenu a.selected {
+color: white;
+}
+
+
+/**************************************************************************************************************/
+/* Global Content
+/**************************************************************************************************************/
+#rpg-body {
+position: relative;
+}
+
+#rpg-body-left {
+position: fixed;
+left: 30px;
+width: 200px;
+padding: 5px;
+}
+
+#rpg-body-center {
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+border-left: 1px solid silver;
+background-opacity: 0.2;
+}
+
+#rpg-body-center section {
+margin-bottom: 6px;
+padding: 5px;
+}
+
+#rpg-body-center h3 {
+margin-top: 0px;
+}
+
