@@ -45,6 +45,9 @@ border-top-right-radius:0.5em;
 #rpg-menu nav a:hover, #rpg-menu nav a.selected, #rpg-submenu, #rpg-body-center {
 background-color: rgb( 10,148,214 );
 }
+#rpg-body-center {
+background-color: rgba( 10,148,214, 0.02 );
+}
 
 #rpg-menu nav a.selected {
 color: white;
@@ -94,7 +97,6 @@ top: 0px;
 left: 200px;
 right: 0px;
 border-left: 1px solid silver;
-background-opacity: 0.2;
 }
 
 #rpg-body-center section {
@@ -105,4 +107,3 @@ padding: 5px;
 #rpg-body-center h3 {
 margin-top: 0px;
 }
-
