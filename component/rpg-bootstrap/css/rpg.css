@@ -21,6 +21,10 @@ th {
 white-space:nowrap;
 }
 
+table.grid thead th, table.grid tbody td {
+border-bottom: 1px solid silver;
+}
+
 .number, .date {
 text-align: center;
 }
@@ -29,11 +33,11 @@ text-align: center;
 /* Global Menu
 /**************************************************************************************************************/
 
-#rpg-menu {
+.rpg-menu {
 margin-bottom: 5px;
 }
 
-#rpg-menu nav a {
+.rpg-menu nav a {
 padding: 5px 35px;
 color: black;
 text-decoration: none;
@@ -42,23 +46,34 @@ border-top-left-radius:0.5em;
 border-top-right-radius:0.5em;
 }
 
-#rpg-menu nav a:hover, #rpg-menu nav a.selected, #rpg-submenu, #rpg-body-center {
-background-color: rgb( 10,148,214 );
-}
-#rpg-body-center {
-background-color: rgba( 10,148,214, 0.02 );
+.rpg-body-center {
+padding-top: 9px;
 }
 
-#rpg-menu nav a.selected {
+
+.rpg-section h3 {
+margin-bottom: 0px;
+border-top-left-radius:0.5em;
+border-top-right-radius:0.5em;
+padding: 6px 9px;
 color: white;
 }
 
-#rpg-submenu {
+.rpg-section div.rpg-section-content {
+border: 1px solid black;
+padding: 6px 9px;
+}
+
+.rpg-menu nav a.selected {
+color: white;
+}
+
+.rpg-submenu {
 padding: 20px 20px;
 border-top-right-radius:0.5em;
 }
 
-#rpg-submenu a {
+.rpg-submenu a {
 border-radius:0.2em;
 padding: 5px 15px;
 color: black;
@@ -69,10 +84,10 @@ color: white;
 background-color: rgba( 255,255,255, 0.2);
 }
 
-#rpg-submenu a:hover, #rpg-submenu a.selected {
+.rpg-submenu a:hover, .rpg-submenu a.selected {
 background: rgba( 255,255,255, 0.5);
 }
-#rpg-submenu a.selected {
+.rpg-submenu a.selected {
 color: white;
 }
 
@@ -80,30 +95,44 @@ color: white;
 /**************************************************************************************************************/
 /* Global Content
 /**************************************************************************************************************/
-#rpg-body {
+.rpg-body {
 position: relative;
 }
 
-#rpg-body-left {
+.rpg-body-left {
 position: fixed;
 left: 30px;
 width: 200px;
 padding: 5px;
 }
 
-#rpg-body-center {
+.rpg-body-center {
 position: absolute;
 top: 0px;
 left: 200px;
 right: 0px;
-border-left: 1px solid silver;
 }
 
-#rpg-body-center section {
+.rpg-body-center section {
 margin-bottom: 6px;
 padding: 5px;
 }
 
-#rpg-body-center h3 {
+.rpg-body-center h3 {
 margin-top: 0px;
+}
+
+
+
+/**************************************************************************************************************/
+/* Application Colour
+/**************************************************************************************************************/
+.rpg-menu nav a:hover, .rpg-menu nav a.selected, .rpg-submenu {
+background-color: rgb( 10,148,214 );
+}
+.rpg-section h3 {
+background-color: rgba( 10,148,214, 0.5 );
+}
+.rpg-section div.rpg-section-content {
+border-color: rgba( 10,148,214, 0.5 );
 }

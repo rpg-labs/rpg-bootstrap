@@ -1,4 +1,4 @@
-<div id="rpg-submenu">
+<div class="rpg-submenu">
     <nav>
         <a href='four'>Four</a>
         <a href='five'>Five</a>
@@ -6,19 +6,19 @@
     </nav>
 </div>
 
-<div id="rpg-body">
-    <div id='rpg-body-left'>
+<div class="rpg-body">
+    <div class='rpg-body-left'>
         <h3>Side Menu - pg 2</h3>
         <ol>
             <li>Link 1</li>
             <li>Link 2</li>
         </ol>
     </div>
-    
-    <div id='rpg-body-center'>
-        <section>
-            <div id="rpg-body-content"></div>
-            <h3 id='rpg-body-title'>Section 1</h3>
+
+    <div class='rpg-body-center'>
+        <section class="rpg-section">
+            <h3>Section 1</h3>
+            <div class="rpg-section-content">
             <ol>
                 <li>A</li>
                 <li>B</li>
@@ -26,7 +26,7 @@
                 <li>D</li>
                 <li>E</li>
             </ol>
-            <h3>Section 2</h3>
+
             <ol>
                 <li>A</li>
                 <li>B</li>
@@ -34,7 +34,7 @@
                 <li>D</li>
                 <li>E</li>
             </ol>
-            <h3>Section 3</h3>
+
             <ol>
                 <li>A</li>
                 <li>B</li>
@@ -42,7 +42,7 @@
                 <li>D</li>
                 <li>E</li>
             </ol>
-            <h3>Section 4</h3>
+
             <ol>
                 <li>A</li>
                 <li>B</li>
@@ -55,12 +55,12 @@
 </div>
 
 <script>
-    $( "#rpg-submenu a" ).bind( "click", function(event) {
+    $( ".rpg-submenu a" ).bind( "click", function(event) {
                                href = this.href.slice( this.href.lastIndexOf( "/" ) + 1);
-                               $("#rpg-submenu a").removeClass( "selected" );
+                               $(".rpg-submenu a").removeClass( "selected" );
                                $(this).addClass( "selected" );
                                
-                               $( "#rpg-body-content" ).html( "New Content. " + href );
+                               $( ".rpg-body-content" ).html( "New Content. " + href );
                                
                                return false;
                                });
